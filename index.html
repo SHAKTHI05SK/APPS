@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HERE AND NOW AI - Skills Gap Analysis</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/hereandnowai/images/refs/heads/main/logos/favicon-logo-with-name.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { // Brand Primary - Golden
+              DEFAULT: '#FFDF00',
+              '50': '#fffef0', 
+              '100': '#fffada',
+              '200': '#fff4b1',
+              '300': '#ffef88',
+              '400': '#ffe95f',
+              '500': '#FFDF00', // Base
+              '600': '#eec900', // Darker shades for text on light, borders
+              '700': '#c9a900',
+              '800': '#a38900',
+              '900': '#7d6900',
+              '950': '#574900'
+            },
+            secondary: { // Brand Secondary - Teal
+              DEFAULT: '#004040',
+              '50': '#e0f2f2', // Lightest for backgrounds
+              '100': '#b3d9d9',
+              '200': '#80c0c0',
+              '300': '#4da6a6',
+              '400': '#1a8d8d',
+              '500': '#006666', 
+              '600': '#004040', // Base
+              '700': '#002b2b', // Darker for text
+              '800': '#001a1a',
+              '900': '#000d0d',
+              '950': '#000000' 
+            }
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.7.0",
+    "recharts": "https://esm.sh/recharts@^3.0.0"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-100">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
